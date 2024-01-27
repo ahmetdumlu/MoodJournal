@@ -5,6 +5,7 @@ co = cohere.Client("VuSyvWee1WwrwjpuSsi46rPRFYxphycnRfFgZHKx")
 from cohere.responses.classify import Example
 from pprint import pprint
 import json
+
 texts = [
     "Today was a great day! I felt very happy.",
     "Today was a great day! I had some challenges. Still, I felt very happy.",
@@ -48,6 +49,21 @@ examples = [
 
     Example("Lost a beloved pet today. Heartbroken and finding it difficult to cope with the loss.", "Very Sad"),
     Example("Dealing with a major setback in my career. Feeling devastated and uncertain about the future.", "Very Sad"),
+
+    Example("Today was an extraordinary day! Received news of a promotion at work, and the joy is overwhelming. Celebrated with colleagues and shared the happiness with friends. Grateful for the recognition and the support of loved ones. Spent the evening surrounded by laughter and good company. Feeling on top of the world!", "Very Happy"),
+    Example("Faced a setback at work today. The project didn't go as planned, and I'm feeling disappointed and frustrated. Spent the evening reflecting on what went wrong and thinking about how to bounce back. It's a tough pill to swallow, but I'm determined to learn from this experience and come back stronger. Tomorrow is a new day.", "Sad"),
+    Example("A typical Wednesday. Worked through the usual tasks and attended a few meetings. Nothing extraordinary happened, but everything went smoothly. Took a short walk during lunch to clear my mind. The weather was pleasant. A calm and uneventful day overall.", "Neutral"),
+    Example("Had a lovely evening with friends. We went out for dinner and shared stories and laughter. It's amazing how good company can lift your spirits. Grateful for the friendships that bring so much joy into my life. Looking forward to more moments like these.", "Happy"),
+    Example("Received news of a loss in the family today. The grief is overwhelming, and my heart aches. Spent the day reminiscing about the beautiful moments shared with the departed soul. It's a challenging time, and emotions are raw. Grateful for the support of family and friends during this difficult period.", "Very Sad"),
+    Example("Attended a virtual art class today. Painting has always been a therapeutic outlet for me. Created a vibrant masterpiece and felt a sense of accomplishment. Art has a way of bringing joy and peace. Grateful for the creative moments that add color to life.", "Happy"),
+    Example("Sunday at home. Did some household chores and relaxed with a good book. The day passed by in a quiet and laid-back manner. Sometimes, embracing simplicity and tranquility is a gift in itself.", "Neutral"),
+    Example("Spent the day exploring a new city. Every corner held surprises, and the adventure filled my heart with joy. Discovered charming cafes, met friendly locals, and captured breathtaking views. Gratitude for the beauty and diversity in the world.", "Very Happy"),
+    Example("Received news of a dear friend moving away. The realization of the distance hits hard, and a sense of loss lingers. Said heartfelt goodbyes, cherishing the memories. Change is inevitable, but it doesn't make farewells any easier.", "Sad"),
+    Example("Completed a challenging workout today. The endorphin rush is real, and the sense of accomplishment is empowering. Physical activity truly has a positive impact on mood and well-being. Feeling energized and ready to conquer the day.", "Happy"),
+    Example("Sunday at home. Did some household chores and relaxed with a good book. The day passed by in a quiet and laid-back manner. Sometimes, embracing simplicity and tranquility is a gift in itself.", "Neutral"),
+    Example("Spent the day exploring a new city. Every corner held surprises, and the adventure filled my heart with joy. Discovered charming cafes, met friendly locals, and captured breathtaking views. Gratitude for the beauty and diversity in the world.", "Very Happy"),
+    Example("Received news of a dear friend moving away. The realization of the distance hits hard, and a sense of loss lingers. Said heartfelt goodbyes, cherishing the memories. Change is inevitable, but it doesn't make farewells any easier.", "Sad"),
+    Example("Completed a challenging workout today. The endorphin rush is real, and the sense of accomplishment is empowering. Physical activity truly has a positive impact on mood and well-being. Feeling energized and ready to conquer the day.", "Happy"),
 ]
 
 # Perform sentiment analysis
