@@ -16,7 +16,11 @@
     font-size: 1.2em;
     margin-bottom: 10px;
   }
-  
+
+  .entry-title{
+    margin-right: 500px;
+  }
+
   .entry-text {
     margin-top: 10px;
   }
