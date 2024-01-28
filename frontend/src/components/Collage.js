@@ -28,7 +28,7 @@ const Collage =  () => {
     },
     {
       id: 5,
-      photoUrl: 'https://placekitten.com/800/401',
+      photoUrl: 'climber.png',
       summary: 'Today, I fulfilled my dream of traveling the world, experiencing a profound sense of freedom and accomplishment atop a breathtaking mountain vista, igniting my passion for adventure.',
     },
     // Add more dummy data as needed
