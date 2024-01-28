@@ -1,15 +1,10 @@
-/* YourComponent.css */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+/* JournalEntryBox.css */
 
-/* Your component-specific styles go here */
-/* JournalEntry.css */
-
-/* Scoped styles for the JournalEntry component */
+/* Scoped styles for the JournalEntryBox component */
 .journal-entry {
-    max-width: 600px;
-    margin: 20px auto;
+    background-color: white; /* Set background color to white */
+    max-width: 1000px; /* Increase max-width for a larger box */
+    margin: 100px auto; /* Center the box with larger margin */
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -20,7 +15,6 @@
   .entry-date {
     font-size: 1.2em;
     margin-bottom: 10px;
-    margin-right: 50px;
   }
   
   .entry-text {
@@ -35,6 +29,6 @@
   .ql-container.ql-snow {
     border: 1px solid #ddd;
     border-radius: 5px;
-    height: 200px; /* Adjust the height as needed */
+    height: 400px; /* Adjust the height as needed */
   }
   
