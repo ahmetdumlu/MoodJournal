@@ -13,14 +13,13 @@ function App() {
     <div className="App">
       <div>
         <Navbar />
-          <Routes>
-            <Route path="/collage" element={<Collage />} />
-            <Route path="/datePicker" element={<DatePicker />} />
-            <Route path="/entryHistory" element={<EntryHistory />} />
-            <Route path="/onboarding" element={<Onboarding />} />
-            <Route path="/JournalEntryBox" element={<JournalEntryBox />} />
-            
-          </Routes>
+        <Routes>
+          <Route path="/collage" element={<Collage />} />
+          <Route path="/datePicker" element={<DatePicker />} />
+          <Route path="/entryHistory" element={<EntryHistory />} />
+          <Route path="/onboarding" element={<Onboarding />} />
+          <Route path="/JournalEntryBox" element={<JournalEntryBox />} />    
+        </Routes>
 
       </div>
     </div>

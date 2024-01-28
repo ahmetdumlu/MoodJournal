@@ -1,0 +1,40 @@
+/* YourComponent.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Your component-specific styles go here */
+/* JournalEntry.css */
+
+/* Scoped styles for the JournalEntry component */
+.journal-entry {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .entry-title,
+  .entry-date {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-right: 50px;
+  }
+  
+  .entry-text {
+    margin-top: 10px;
+  }
+  
+  .ql-toolbar.ql-snow {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .ql-container.ql-snow {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 200px; /* Adjust the height as needed */
+  }
+  

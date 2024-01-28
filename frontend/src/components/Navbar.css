@@ -1,0 +1,40 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2196F3; /* Blue theme color */
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .middle-section {
+    flex: 1; /* Use flex: 1; instead of flex-grow: 1; */
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin: 0 10px;
+  }
+  
+  .logo:hover {
+    color: #ffcc00; /* Change color on hover */
+  }
+  
