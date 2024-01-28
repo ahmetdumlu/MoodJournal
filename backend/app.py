@@ -3,8 +3,10 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 import uuid
 from CohereClassifier import Classifier
-
+from flask_cors import CORS
+from constants import my_summaries 
 app = Flask(__name__)
+CORS(app)
 # Initialize Firebase Admin
 cred = credentials.Certificate('./firebase.json')  # Update this path
 firebase_admin.initialize_app(cred)
@@ -71,16 +73,7 @@ def get_entry(entry_id):
     
 @app.route('/get_summaries', methods=['GET'])
 def get_summary():
-    all_summaries = {
-        "summaries" : [
-        {'summary': 'This is a summary.'},
-        {'summary': 'This is another summary.'},
-        {'summary': 'This is a summary.'},
-        {'summary': 'This is another summary.'},
-        {'summary': 'This is a summary.'},
-        {'summary': 'This is another summary.'}
-        ]
-    }
+    all_summaries = my_summaries
     return jsonify(all_summaries), 200
 
 
