@@ -20,8 +20,8 @@ function App() {
           <Route path="/collage" element={<Collage />} />
           <Route path="/datePicker" element={<DatePicker />} />
           <Route path="/entryHistory" element={<EntryHistory />} />
-          <Route path="/" element={<Onboarding />} />
           <Route path="/JournalEntryBox" element={<JournalEntryBox />} />
+          <Route path="/" element={<Onboarding />} />
         </Routes>
       </div>
     </div>
