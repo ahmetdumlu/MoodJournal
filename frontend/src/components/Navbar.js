@@ -1,7 +1,7 @@
 // Navbar.js
 import React from 'react';
 import LeftSection from './LeftSection';
-import { Link, useNavigate } from 'react-router-dom'; // Import Link and useNavigate from react-router-dom
+import { useNavigate } from 'react-router-dom'; // Import Link and useNavigate from react-router-dom
 import './Navbar.css'; // Import your component-specific styles
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';

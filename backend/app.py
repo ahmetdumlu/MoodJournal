@@ -24,10 +24,9 @@ def create_entry():
 
 
     highest_confidence = 0.0
-    highest_label = 'Happy'
+    highest_label = ''
 
     for label in classifications.classifications[0].labels:
-        confidence_level = classifications.classifications[0].labels[label].confidence
         confidence_level = classifications.classifications[0].labels[label].confidence
         if confidence_level > highest_confidence:
             highest_confidence = confidence_level
@@ -39,11 +38,20 @@ def create_entry():
     text_data['id'] = doc_ref.id
     doc_ref.set(text_data)
 
-    # print('Data received: {}'.format(text_data))
-
     response = jsonify({'message': 'Entry created', 'id': unique_id})
 
     return response, 201
+
+@app.route('/get_entries', methods=['GET'])
+def get_entries():
+    all_entries = []
+    # Retrieve the documents from Firestore
+    docs = db.collection('journal_entries').stream()
+
+    for doc in docs:
+        all_entries.append(doc.to_dict())
+
+    return jsonify(all_entries), 200
 
 @app.route('/get_entry/<entry_id>', methods=['GET'])
 def get_entry(entry_id):
