@@ -1,14 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './EntryHistory.css';
+import axios from 'axios';
 
 const EntryHistory = () => {
   // Dummy data for testing
-  const entryHistory = [
-    { id: 1, title: 'Entry 1', date: '2022-01-01', label: 'Happy' },
-    { id: 2, title: 'Entry 2', date: '2022-01-05', label: 'Neutral' },
-    { id: 3, title: 'Entry 3', date: '2022-01-10', label: 'Sad' },
-    // Add more dummy data as needed
-  ];
+  const [entryHistory, setEntryHistory] = useState([]);
+
+  useEffect(() => {
+    // Function to fetch entry history data
+    const fetchEntryHistory = async () => {
+      try {
+        // Replace '/api/entries' with your actual backend endpoint
+        const response = await axios.get('http://127.0.0.1:5000/get_entries');
+        console.log(response.data);
+        setEntryHistory(response.data); // Update state with fetched data
+      } catch (error) {
+        console.error('Error fetching entry history:', error);
+        // Handle error, e.g., by setting an error state or displaying a message
+      }
+    };
+
+    fetchEntryHistory(); // Call the fetch function
+  }, []);
 
   return (
     <div className="entry-history-wrapper">
