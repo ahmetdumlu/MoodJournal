@@ -3,17 +3,33 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './Collage.css';
 
-const Collage = () => {
+const Collage =  () => {
+  
   const dummyData = [
     {
       id: 1,
-      photoUrl: 'https://placekitten.com/800/400',
-      summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      photoUrl: 'birthday_photo.png',
+      summary: 'I am so surprised and delighted by the surprise birthday party my family and friends prepared for me. The decorations, greetings, hugs, and shared memories made the day so special and unforgettable. I am so grateful for these precious people in my life.',
     },
     {
       id: 2,
+      photoUrl: 'graduation_photo.jpg',
+      summary: 'I reflect on my graduation day, a mix of emotions from joy to nostalgia. I felt proud and accomplished, surrounded by classmates and family cheering me on. I cherish this milestone, marking the end of one chapter and the start of another closer to my dreams.',
+    },
+    {
+      id: 3,
+      photoUrl: 'date.png',
+      summary: 'I met my soulmate at a coffee shop. Our conversation was easy, and we felt a strong connection. That meeting changed my life as I knew it, and I found true love.',
+    },
+    {
+      id: 4,
+      photoUrl: 'congrats.png',
+      summary: 'I received my dream job offer today, a culmination of years of hard work and perseverance, sparking overwhelming joy and excitement for the impactful future ahead.',
+    },
+    {
+      id: 5,
       photoUrl: 'https://placekitten.com/800/401',
-      summary: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      summary: 'Today, I fulfilled my dream of traveling the world, experiencing a profound sense of freedom and accomplishment atop a breathtaking mountain vista, igniting my passion for adventure.',
     },
     // Add more dummy data as needed
   ];
@@ -53,7 +69,7 @@ const Collage = () => {
         <Carousel selectedItem={currentSlide} showArrows={false} renderIndicator={(onClickHandler, isSelected, index, label) => {
             return (
               <li
-                style={{ marginBottom: '55px', listStyle: 'none', display: 'inline-block' }}
+                style={{ marginBottom: '100px', listStyle: 'none', display: 'inline-block' }}
                 onClick={onClickHandler}
                 key={index}
                 role="button"
