@@ -1,6 +1,7 @@
 // JournalEntryBox.js
 import React, { useState } from 'react';
 import ReactQuill from 'react-quill';
+import axios from 'axios';
 import 'react-quill/dist/quill.snow.css';
 import './JournalEntryBox.css'; // Import your component-specific styles
 
@@ -26,6 +27,21 @@ function JournalEntryBox() {
     'link', 'image', 'video'
   ];
 
+  const onSave = async () => {
+    console.log(title)
+    console.log(date)
+    console.log(entryText.substring(3,entryText.length-4))
+    
+    const entry = {
+      title: title,
+      date: date,
+      entry_text: entryText.substring(3,entryText.length-4)
+    };
+
+    const response = await axios.post('http://127.0.0.1:5000/create_entry', entry);
+
+  }
+
   return (
     <div className="journal-entry">
       <input
@@ -49,6 +65,7 @@ function JournalEntryBox() {
         formats={formats}
         placeholder="Your journal entry..."
       />
+      <button onClick={onSave} className="save-button">Save</button>
     </div>
   );
 }

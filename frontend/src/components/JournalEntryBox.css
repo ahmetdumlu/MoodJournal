@@ -36,3 +36,18 @@
     height: 400px; /* Adjust the height as needed */
   }
   
+  .save-button {
+    right: 10px; /* 10px from the right edge of the journal-entry container */
+    bottom: 10px; /* 10px from the bottom edge of the journal-entry container */
+    padding: 8px 16px; /* Adjust padding to your preference */
+    margin-top: 10px;
+    background-color: #007bff; /* Example background color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer when hovering over the button */
+  }
+  
+  .save-button:hover {
+    background-color: #0056b3; /* Darker shade when hovering for visual feedback */
+  }
