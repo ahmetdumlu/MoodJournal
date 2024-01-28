@@ -42,11 +42,17 @@ const DatePicker = () => {
         </div>
     
         <div className="timeline-grid">
-          <TimelineBox year={2022} onClick={() => handleTimelineBoxClick(2022)} />
-          <TimelineBox year={2023} onClick={() => handleTimelineBoxClick(2023)} />
-          <TimelineBox year={2024} onClick={() => handleTimelineBoxClick(2024)} />
+          <div className="timeline-box">
+            <TimelineBox year={2022} onClick={() => handleTimelineBoxClick(2022)} />
+          </div>
+          <div className="timeline-box">
+            <TimelineBox year={2023} onClick={() => handleTimelineBoxClick(2023)} />
+          </div>
+          <div className="timeline-box">
+            <TimelineBox year={2024} onClick={() => handleTimelineBoxClick(2024)} />
+          </div>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };

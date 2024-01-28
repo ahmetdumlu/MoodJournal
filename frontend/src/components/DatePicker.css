@@ -1,66 +1,74 @@
 /* DatePicker.css */
 
 .datepicker-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Adjust to take the full height of the viewport */
-    margin: 20px;
-  }
-  
-  .slider-container {
-    margin-bottom: 10px;
-  }
-  
-  .datepicker-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white; 
-    padding: 20px; /* Add padding */
-    border-radius: 10px; /* Add border-radius */
-  }
-  
-  .timeline-grid {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px; /* Add padding */
-  }
-  
-  .timeline-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px; /* Increase width for bigger boxes */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin: 10px;
-    text-align: center; /* Center text */
-    height: 300px;
-  }
-  
-  .timeline-box h3 {
-    margin-bottom: 10px;
-  }
-  
-  /* Style for the select boxes */
-  select {
-    width: 150px;
-    margin: 5px;
-    padding: 8px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #333;
-    cursor: pointer;
-  }
-  
-  /* Style for the select box on hover */
-  select:hover {
-    border-color: #999;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust to take the full height of the viewport */
+  margin: 20px;
+}
+
+.slider-container {
+  margin-bottom: 10px;
+}
+
+.datepicker-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0; /* Light gray background color */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Add border-radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+}
+
+.timeline-grid {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px; /* Add padding */
+  background-color: #e6e6e6; /* Lighter gray background color */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.timeline-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px; /* Increase width for bigger boxes */
+  border-radius: 8px;
+  margin: 10px;
+  text-align: center; /* Center text */
+  height: 300px;
+  background-color: white; /* White background color */
+}
+
+.timeline-box h3 {
+  margin-bottom: 10px;
+}
+
+/* Add background color to the timeline-box */
+.timeline-box {
+  background-color: #007bff; /* Example background color */
+  color: white; /* Text color */
+}
+
+/* Style for the select boxes */
+select {
+  width: 150px;
+  margin: 5px;
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Style for the select box on hover */
+select:hover {
+  border-color: #999;
+}
