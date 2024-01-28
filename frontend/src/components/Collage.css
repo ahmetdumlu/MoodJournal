@@ -1,0 +1,49 @@
+.collage-wrapper {
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the total width */
+    max-width: 800px;
+    margin: 0 auto; /* Center the wrapper horizontally */
+    margin-top: 50px; /* Add top margin as needed */
+  }
+  
+  .collage-container {
+    /* No need for explicit width/margin here */
+  }
+  
+  .collage-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .collage-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .summary-text {
+    font-size: 1.2em;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
