@@ -28,19 +28,19 @@ function JournalEntryBox() {
   ];
 
   const onSave = async () => {
-    console.log(title)
-    console.log(date)
-    console.log(entryText.substring(3,entryText.length-4))
-    
     const entry = {
       title: title,
       date: date,
-      entry_text: entryText.substring(3,entryText.length-4)
+      entry_text: entryText.substring(3, entryText.length - 4)
     };
 
     const response = await axios.post('http://127.0.0.1:5000/create_entry', entry);
+  };
 
-  }
+  const onUploadPhoto = () => {
+    // Handle photo upload logic
+    console.log("Upload Photo button clicked");
+  };
 
   return (
     <div className="journal-entry">
@@ -65,7 +65,14 @@ function JournalEntryBox() {
         formats={formats}
         placeholder="Your journal entry..."
       />
-      <button onClick={onSave} className="save-button">Save</button>
+      <div className="button-container">
+        <button onClick={onSave} className="save-button">
+          Save
+        </button>
+        <button onClick={onUploadPhoto} className="upload-photo-button">
+          Upload Photo
+        </button>
+      </div>
     </div>
   );
 }

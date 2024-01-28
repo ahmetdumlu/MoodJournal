@@ -1,10 +1,9 @@
 /* JournalEntryBox.css */
 
-/* Scoped styles for the JournalEntryBox component */
 .journal-entry {
-    background-color: white; /* Set background color to white */
-    max-width: 1000px; /* Increase max-width for a larger box */
-    margin: 100px auto; /* Center the box with larger margin */
+    background-color: white;
+    max-width: 1000px;
+    margin: 100px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -16,11 +15,11 @@
     font-size: 1.2em;
     margin-bottom: 10px;
   }
-
-  .entry-title{
+  
+  .entry-title {
     margin-right: 500px;
   }
-
+  
   .entry-text {
     margin-top: 10px;
   }
@@ -33,21 +32,38 @@
   .ql-container.ql-snow {
     border: 1px solid #ddd;
     border-radius: 5px;
-    height: 400px; /* Adjust the height as needed */
+    height: 400px;
+  }
+  
+  .save-button,
+  .upload-photo-button {
+    padding: 8px 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
   
   .save-button {
-    right: 10px; /* 10px from the right edge of the journal-entry container */
-    bottom: 10px; /* 10px from the bottom edge of the journal-entry container */
-    padding: 8px 16px; /* Adjust padding to your preference */
-    margin-top: 10px;
-    background-color: #007bff; /* Example background color */
-    color: white; /* Text color */
-    border: none;
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Change cursor to pointer when hovering over the button */
+    background-color: #007bff;
+    color: white;
+    margin-right: 10px;
   }
   
   .save-button:hover {
-    background-color: #0056b3; /* Darker shade when hovering for visual feedback */
+    background-color: #0056b3;
   }
+  
+  .upload-photo-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .upload-photo-button:hover {
+    background-color: #218838;
+  }
+  
+  .button-container {
+    display: flex;
+  }
+  
