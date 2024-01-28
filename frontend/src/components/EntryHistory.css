@@ -1,0 +1,31 @@
+
+
+  
+.entry-history-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+  }
+  
+  .entry-header,
+  .entry-entry {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .entry-header {
+    font-weight: bold;
+  }
+  
+  .entry-entry {
+    border: 1px solid #ddd;
+  }
+  
+  /* Optional: Add some styling for better visual appeal */
+  
