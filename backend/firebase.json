@@ -1,13 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "moodjournal-9521f",
-  "private_key_id": "b61254af4ee43d61aa975dc74a91b99d62490fd2",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDCt1yElPqXJVZv\nRX336/mkhh+27wutNUzO+baBkmJXp7vXLubzwOukLXbh4sZLQ203DV0sddNyQT8Y\nrQHbAruRBwkg1FFPbkFacEGbhoCD0oF/LUrxit5gZyM7PtROTM2krjqak7u0q+T4\n79DQGAfZ9R80ldpSrEj3GUl9MXy0Fap+H5ufDcGPk+ZJcoDi4+Mc3a+2NUC5KFM1\n98igdupZ9YhkNv+880s+SuJLgaZPtu8g2IF52zQwSExP6e/5krVRc/DTgMVahnKT\nIvADUwxA9jFF5c2OE/o5QT/cLWst7zxDXrHrglOPcLEhqs4R4bwrwQmccgzuyeOE\nC/X6gU3DAgMBAAECggEACbKYKQJCeMSjSWdsnqxiAo+rhLDjI/1DlgtZy5o+y57O\n/CiZ2AoDsmmRQi7JMXZqOhOwUEaOAWK+gbwcG4xHSzHOgpQQeKRFHPv6SISqYeZa\nDLt0wBLqgGKinpDCgiPRGiKTSJ+S+ayV+s/21mZb/b73jubnuLZb6/KWdmXAkDdt\noqxaznfMFeAko327l6fiKWLr64wgOeRo2xBXL2w4knoxt55/OFXhILsPEEopQ53F\no+dN0Ke/THe+6FZJYfmDR7EbSz22XOJDuy9GovxiRl8XDixPcXnSC/NF9VpSs+vJ\nWif3Ij33izvpkcxrPobjqbXgvSp646h27+svWBHeAQKBgQD6wJLVnwFWUBrxFQ5Y\nMqo5E3VlbxBNySPN1uHoalYihtEw9AqFaY6hTgUjKEoNPM0dY1oh5tz1EllEY8On\nZJdHJ8icxdoUa0FElbr0WBGxtnFNpF1C7zUIIvICuMUteqN7uFA3tSpSAlVvrCCI\n23I1oNpq/2RO5iyRBwOs3zTdDQKBgQDGypH9nzeDRgr062vCnmJOVE2FYN3ARPzG\nqunHIchPdM6t4lpfb9sjJUcEhaGD6jRjLWtqPnp8RssAYvU1HEjSdd/Mz3ReiPJO\n0T+u8Ur689LlGb1vL7aDNAKKRAM3kEbyRe8A8OySZe71FvPqAE658k82N8gXRxi5\n/N2tPldCDwKBgCYGIb4HGJrQFuXL/ZreQ/XXv4ucJerFv4otNaCaz2j47Kvxtc65\nTQmk3R6Rs3kCaVA1iqttaMA5AhRe1IKDvHTr0X4EeqdyBDm0Qt9eo4BBXDkb3ZCS\n2YXcVrqW7j+RQ001i+SGsl4xQGdowJ5AOLdtJvHmvH1CZiuv1pzWVBvZAoGBALy1\nbdMqQqNuaVZI6Zntinq7EoAMDVXI54CcnKH5UtMCmnR8zLeOUqNRbtI/HK1CNgr0\nAeTwfIvfFDRAvG93czW+yf397YUUUZk6kE69JiWGMmxje+3BiGuSgtrIZ5lmb8Lr\nWlA1ZQ4wj5+/8znuos1n1YQtfdeDGVjtT253IJRHAoGASO92Nnws7GG4s62LHWWH\n8UMu25i0Ibzt0DylMD/9RB7rA0gl8wr2VVG8gjADEMmKk6fuWWiuN8+vuyFSs+Qo\nemu0bpsDni9+mgu5a7VFLzs53Ej/R8huf1DYZpKDdplgGPNDO2S/POrcb8W5uTUp\nP+h81QXLC8bWu0WXQPdsSUk=\n-----END PRIVATE KEY-----\n",
-  "client_email": "firebase-adminsdk-ncxvl@moodjournal-9521f.iam.gserviceaccount.com",
-  "client_id": "110470087672564018365",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ncxvl%40moodjournal-9521f.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
+
